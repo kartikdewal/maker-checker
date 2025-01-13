@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./db/psql:/var/lib/postgresql/data
+      - ./store/psql/init/create_database.sql:/docker-entrypoint-initdb.d/create_database.sql
