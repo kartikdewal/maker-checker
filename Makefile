@@ -32,6 +32,7 @@ db-setup:
 migrate-tool-download:
 	@echo "downloading migrate tool"
 	@curl -L https://github.com/golang-migrate/migrate/releases/download/v4.18.1/migrate.darwin-arm64.tar.gz | tar xvz -C ./tools/mac
+	@curl -L https://github.com/golang-migrate/migrate/releases/download/v4.18.1/migrate.linux-amd64.tar.gz | tar xvz -C ./tools/linux
 
 migrate-up:
 	@echo "Running migrations up..."
