@@ -1,18 +1,5 @@
 # maker-checker
 
-## Problem Statement
-
-A simplified version of maker-checker approval process.
-
-Business requirements:
-
-- Send a message to a recipient, however, this send message request has to be validated by users to be sent. If users approve the message, it is sent to the recipient. If a user rejects the message, it is not sent to the recipient.
-
-
-Technical requirements:
-
-- Implement the service and expose it via APIs.
-
 ## Overview
 
 This is a simple REST API implementation of a maker-checker pattern. The idea is to have a maker create a request and a checker approve or reject it.
